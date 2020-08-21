@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
-#mainNav, #projectNav {
+ #mainNav, #projectNav {
   min-height: 56px;
   background-color: #fff;
 }
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 992px) {
-  #mainNav {
+  #mainNav { 
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
@@ -126,12 +126,40 @@
     height: 100vh;
     padding: 0;
   }
+
   .masthead h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
-    letter-spacing: 0.8rem;
+    /*letter-spacing: 0.8rem;*/
   }
   .masthead h2 {
+    max-width: 40rem;
+    font-size: 1.25rem;
+  }
+}
+
+.projhead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .projhead {
+    height: 100vh;
+    padding: 0;
+  }
+  /*
+  .projhead h1 {
+    font-size: 6.5rem;
+  } */
+  .projhead h2 {
     max-width: 40rem;
     font-size: 1.25rem;
   }
@@ -149,11 +177,12 @@
   text-transform: uppercase;
   width: 30%;
   padding-top: 30%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
 }
 
 .explore-link {
-  color: white;
+  color: #f8f9fa;
+  opacity: 70%;
 }
 
 .explore-link:hover {
@@ -168,9 +197,16 @@
   padding: 2rem;
 }
 
-.proj-title {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+.projects-section h4 {
+  font-weight: bold;
+}
+
+.projects-section p {
+  font-size: 1rem;
+}
+
+.projects-section a {
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
@@ -193,6 +229,25 @@
 
 .bg-cero {
   background-image: linear-gradient(110deg, #4dce89, #38a169);
+}
+
+.bg-forest {
+  background: linear-gradient(to bottom, rgba(162, 228, 245, 0.1) 0%, rgba(28, 57, 81, 0.6) 80%, #081724 100%), url("../img/phyIxD_forest.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.bg-darkblue {
+  background-color: #0f131a;
+  background-image: linear-gradient(to bottom, rgba(8, 24, 37, 1) 0%, rgba(16, 20, 27, 0.6) 80%, #10141b 100%);
+  /*background-image: linear-gradient(to bottom, #0f131a 90%, #3e4147);*/
+}
+
+.bg-transition {
+  background-image: linear-gradient(to bottom, #0f131a 10%, #f8f9fa);
+  min-height: 30rem;
 }
 
 .proj-members {
@@ -262,7 +317,15 @@
 
 /* Google Slides */
 .embed-responsive {
-  padding-bottom: 61.2%; 
+  width: 84.5% !important;
+  padding-bottom: 50%;
+  margin-left: 7.75%;
+}
+
+.embed-caption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-left: 7.75%;
 }
 
 .signup-section {
@@ -330,8 +393,10 @@
 }
 
 body {
-  font-family: 'Nunito';
-  letter-spacing: 0.0625em;
+  /*font-family: 'Nunito';*/
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  /*letter-spacing: 0.0625em; */
 }
 
 a {
@@ -357,4 +422,151 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+
+/* NEW STYLING BELOW */
+
+/* Section project page */
+.projhead h1 {
+  font-weight: 800;
+  color: white;
+}
+
+.projhead a {
+  font-weight: 800;
+}
+
+.proj-title-lg {
+  font-size: 4.2rem;
+}
+
+.proj-title-md {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.proj-tags {
+  font-weight: 900;
+  padding-left: 2px;
+}
+
+.proj-intro {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.sec-heading {
+  font-weight: 900;
+}
+
+.img-caption {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.sec-page {
+  width: 100%;
+  height: auto;
+  padding: 8rem 0;
+}
+
+.sec-page p {
+  text-align: justify;
+}
+
+.sec-page h2 {
+  font-weight: 900;
+}
+
+@media (min-width: 992px) {
+  .sec-page h2 {
+    margin-top: 10rem;
+  }
+}
+
+.img-info {
+  color: grey;
+}
+
+.img-info p {
+  text-align: left;
+}
+
+.op-7 {
+  opacity: 70%;
+}
+
+.quote {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: left !important;
+  line-height: 1.2;
+}
+
+.quote-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 70%, #0f131a);
+}
+
+
+/* Bracket reference list */
+ol {
+  counter-reset: list;
+}
+
+ol > li {
+  list-style: none;
+  position: relative;
+}
+
+ol > li:before {
+  content: "[" counter(list) "] ";
+  counter-increment: list;
+  position: absolute;
+  left: -2.4rem;
+}
+
+.ref-title {
+  font-weight: 600;
+}
+
+.ref-publ {
+  font-size: 1rem;
+}
+
+/* Special text effects */
+#proj .glow {
+  color: white;
+}
+
+/* glow text effect on hover */
+@media (min-width: 992px) {
+  #proj .glow:hover {
+    -webkit-animation: glow 1.7s ease-in-out infinite alternate;
+    -moz-animation: glow 1.7s ease-in-out infinite alternate;
+    animation: glow 1.7s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #0092e6, 0 0 15px #0092e6, 0 0 20px #0092e6, 0 0 25px #0092e6, 0 0 30px #0092e6;
+    }
+    
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #4dbeff, 0 0 20px #4dbeff, 0 0 30px #4dbeff, 0 0 40px #4dbeff, 0 0 50px #4dbeff, 0 0 60px #4dbeff;
+    }
+  }
+}
+
+/* device mockup */
+.device-container {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
 }
