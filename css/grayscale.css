@@ -10,22 +10,27 @@
 }
 
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  text-transform: uppercase;
+  font-weight: 600;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #e79b93;
+  border: 0px solid #e79b93;
 }
 
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
 
-#mainNav .navbar-brand, #projectNav .navbar-brand {
+#mainNav .navbar-brand {
   color: #161616;
   font-family: 'Lato', sans-serif;
   font-size: 1.7rem;
   font-weight: 700;
   padding: .9rem 0;
+}
+
+#mainNav .navbar-brand .shift {
+  margin-left: 1.7rem;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -49,15 +54,30 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(201, 195, 189, 0.75);
+  }
+  #mainNav .projNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(201, 195, 189, 0.6);
+  }
+  #mainNav .projNav .nav-link {
     color: rgba(255, 255, 255, 0.5);
   }
+  #mainNav .disabled {
+    color: rgba(201, 195, 189, 1);
+  }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(201, 195, 189, 1);
+  }
+  #mainNav .projNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -66,23 +86,24 @@
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: rgba(29, 29, 29, 0.6);
   }
   #mainNav.navbar-shrink .nav-link, #projectNav .nav-link {
-    color: #161616;
+    color: rgba(29, 29, 29, 0.6);
     padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .disabled {
+    color: #e79b93;
   }
   #mainNav.navbar-shrink .nav-link:hover, #projectNav .nav-link:hover {
-    color: #64a19d;
+    color: #e79b93;
   }
   #mainNav.navbar-shrink .nav-link:active, #projectNav .nav-link:active {
-    color: #467370;
+    color: #e79b93;
   }
   #mainNav.navbar-shrink .nav-link1.active {
-    color: #64a19d;
+    color: #e79b93;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
   }
 }
 
@@ -92,13 +113,15 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
+  /*
   background: linear-gradient(to bottom, rgba(103, 118, 76, 0.1) 0%, rgba(24, 41, 33, 0.7) 65%, #182921 100%), url("../img/palms.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: cover; */
 }
 
+/*
 .masthead h1 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
@@ -107,12 +130,13 @@
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
+} */
 
+/*
 .masthead h2 {
   max-width: 40rem;
   font-size: 1rem;
-}
+} */
 
 @media (min-width: 768px) {
   .masthead h1 {
@@ -132,10 +156,11 @@
     line-height: 6.5rem;
     /*letter-spacing: 0.8rem;*/
   }
+  /*
   .masthead h2 {
     max-width: 40rem;
     font-size: 1.25rem;
-  }
+  }*/
 }
 
 .projhead {
@@ -165,14 +190,6 @@
   }
 }
 
-.info-container {
-  width: 60%;
-}
-
-.intro-text {
-  width: 85%;
-}
-
 .explore {
   text-transform: uppercase;
   width: 30%;
@@ -195,10 +212,6 @@
 
 .projects-section .featured-text {
   padding: 2rem;
-}
-
-.projects-section h4 {
-  font-weight: bold;
 }
 
 .projects-section p {
@@ -250,6 +263,10 @@
   min-height: 30rem;
 }
 
+.bg-sand {
+  background-color: whitesmoke;
+}
+
 .proj-members {
   color: black;
 }
@@ -298,23 +315,6 @@
   }
 }
 
-
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 3rem;
-  }
-  .projects-section .project-text hr {
-    border-color: #64a19d;
-    border-width: .25rem;
-    width: 30%;
-  }
-}
-
 /* Google Slides */
 .embed-responsive {
   width: 84.5% !important;
@@ -344,7 +344,7 @@
   font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  /*letter-spacing: 0.15rem;*/
   border: 0;
 }
 
@@ -540,6 +540,17 @@ ol > li:before {
   font-size: 1rem;
 }
 
+h3 {
+  font-weight: 900;
+}
+
+/* device mockup */
+.device-container {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Special text effects */
 #proj .glow {
   color: white;
@@ -564,9 +575,8 @@ ol > li:before {
   }
 }
 
-/* device mockup */
-.device-container {
-  max-width: 300px;
-  margin-right: auto;
-  margin-left: auto;
+.brand { /* all pages */
+  font-weight: bold;
+  text-align: center;
+  line-height: .5;
 }

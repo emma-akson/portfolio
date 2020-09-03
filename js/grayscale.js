@@ -39,4 +39,8 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  $("#intro-title").one("mouseover", function() {
+    $("#intro-title").addClass('spin');
+  });
+
 })(jQuery); // End of use strict

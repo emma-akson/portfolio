@@ -1,0 +1,75 @@
+/* Styling specific for about.html */
+
+.about h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e79b93;
+  text-shadow: #f2cac6 0.15rem 0.15rem, #fff 0.3rem 0.3rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.edu-link {
+  font-weight: normal !important;
+  color: #212529 !important;
+  border-bottom: 2px dashed #c9c3bd;
+  padding-bottom: 2px;
+}
+
+.edu-link:hover {
+  border-bottom: 2px dashed #f2cac6;
+}
+
+.edu-col {
+  text-align: right;
+}
+
+.experience-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.experience-title span {
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.experience-info {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.volunteer {
+  color: rgba(29, 29, 29, 0.4);
+}
+
+.blob-container {
+  width: 500px;
+  height: 600px;
+}
+
+.blob1 {
+  transform: scale(3.0);
+}
+
+.blob2 {
+  transform: scale(0.6);
+}
+
+.about-section {
+  padding: 10rem 0;
+}
+
+.about-section h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #e79b93;
+}

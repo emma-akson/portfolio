@@ -17,9 +17,11 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 
 </head>
 
@@ -28,7 +30,11 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Emma Åkesson</a>
+      <div class="brand">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        E<br/><span class="shift">Å</span>
+        </a>
+      </div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -36,10 +42,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#page-top">ABOUT</a>
+            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link1 js-scroll-trigger" href="#projects">PROJECTS</a>
+            <a class="nav-link nav-link1 js-scroll-trigger" href="#projects">Projects</a>
           </li>
         </ul>
       </div>
@@ -47,47 +53,44 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-end justify-content-end">
-      <div class="intro-container">
-        <div class="d-flex row w-100 justify-content-end">
-          <div class="info-container">
-            <h2 class="text-light op-7 mt-2 mb-2 text-uppercase">M.Sc.Eng student | <b>Interactive Media Technology</b><br/>
-              KTH Royal Institute of Technology</h2>
+  <header class="masthead bg-sand">
+    <div class="container d-flex h-100 align-items-start justify-content-start">
+      <div class="d-flex row w-100">
+        <div class="col-lg-8 about">
+          <div id="intro-title" class="mb-0">
+            <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>,</span>
+            <span>I</span><span>'</span><span>m</span>
+            <span>E</span><span>m</span><span>m</span><span>a</span><span>.</span>
           </div>
-        </div>
-        <div class="d-flex row w-100 justify-content-end">
-          <div class="info-container">
-            <p class="text-light op-7 mt-2 mb-2 intro-text">Hi! I'm Emma. A recent engineer 
-              graduate with the hybrid interest of working with both design and development. 
-              I’m passionate about both the visual and technical aspects of a creation and 
-              my four main interests are front end-development, user experience, service 
-              &amp; interaction design.
-            </p>
+          <h2>I'm a recent engineer graduate and usability enthusiast with 
+            leadership experience.</h2>
+          <div class="location mt-3">
+            <i class="fas fa-map-marker-alt"></i> Stockholm, Sweden
           </div>
-        </div>
-        <div class="d-flex row w-100 justify-content-end">
-          <div class="info-container">
-            <div class="text-center explore"><a class="explore-link" href="#projects">Explore my projects<br/>
-            <i class="fas fa-chevron-down"></i></a></div>
+          <div onclick="location.href='#projects'" class="selected-work">
+            Check out my work
+            <i class="fas fa-arrow-down"></i>
           </div>
         </div>
       </div>
     </div>
+    <div class="svg-img-container">
+      <img class="svg-img" src="img/mountain.svg">
+    </div>
   </header>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
+  <section id="projects" class="projects-section bg-sand">
     <div class="container">
 
       <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <div class="row align-items-center no-gutters">
         <div class="col-xl-8 col-lg-7">
           <img class="img-fluid mb-3 mb-lg-0" src="img/cero-collage.jpg" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>CERO Challenge</h4>
+            <h3>CERO Challenge</h3>
             <p class="text-black-50 mb-0">
               In Advanced Project Course we did a redesign of the CERO Challenge app 
               for promoting sustainable travel behaviour. With the help of current research 
@@ -96,36 +99,36 @@
               Research in Organisations), and new ways to foster sustainable cultures and 
               a social environment focused on encouragement.
             </p><br/>
-            <a href="./projects/cero.html">EXPLORE <i class="fas fa-chevron-right"></i></i></a>
+            <a href="./projects/cero.html">EXPLORE <i class="fas fa-arrow-right"></i></i></a>
           </div>
         </div>
       </div>
 
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <div class="row align-items-center no-gutters">
         <div class="col-xl-8 col-lg-7">
           <img class="img-fluid mb-3 mb-lg-0" src="img/phyIxD_forest.gif" alt="">
         </div>
         <div class="col-xl-4 col-lg-5 order-lg-first">
           <div class="featured-text-r text-center text-lg-left">
-            <h4>Interactive Light Forest</h4>
+            <h3>Interactive Light Forest</h3>
             <p class="text-black-50 mb-0">
               This interactive light installation was the final project in the course Physical 
               Interaction Design. The theme of the year was "Designing for the Winter Playground" 
               and our task was to build a piece of playground equipment fit for the harsh, cold 
               and dark winter conditions in Sweden.
             </p><br/>
-            <a href="./projects/lightforest.html">EXPLORE <i class="fas fa-chevron-right"></i></i></a>
+            <a href="./projects/lightforest.html">EXPLORE <i class="fas fa-arrow-right"></i></i></a>
           </div>
         </div>
       </div>
 
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="row align-items-center no-gutters">
             <div class="col-xl-8 col-lg-7">
               <img class="img-fluid mb-3 mb-lg-0" src="img/nds-3d.gif" alt="">
             </div>
             <div class="col-xl-4 col-lg-5">
               <div class="featured-text text-center text-lg-left">
-                <h4>Dialogue Tool for Urban Planning</h4>
+                <h3>Dialogue Tool for Urban Planning</h3>
                 <p class="text-black-50 mb-0">
                   This high-fidelity prototype was developed as a part of the course Cooperative 
                   IT-design. The City of Stockholm provided the project challenge; designing a 
@@ -143,7 +146,7 @@
     </section>
 
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
+  <footer class="bg-light small text-center text-black-50">
     <div class="container">
       Copyright &copy; Emma Åkesson 2020
     </div>
@@ -157,7 +160,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+  <script src="js/grayscale.js"></script>
 
 </body>
 

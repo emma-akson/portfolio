@@ -1,0 +1,142 @@
+/* Styling specific for index.html */
+
+.about {
+  padding-top: 10rem;
+  z-index: 1;
+}
+
+#intro-title {
+  font-size: 4rem;
+  font-weight: bold;
+  position: relative;
+  color: #e79b93;
+}
+
+.about h2 {
+  font-size: 3rem;
+}
+
+.location {
+  color: rgba(201, 195, 189, 1);
+}
+
+.selected-work {
+  cursor: pointer;
+  margin-top: 10rem;
+  width: 184px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.svg-img-container {
+  position: absolute;
+  /*background-color: palevioletred;*/
+  top: 19rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.svg-img {
+  position: relative;
+  left: 50%;
+  height: auto;
+  width: 60%;
+  opacity: 0.1;
+}
+
+.projects-section .row {
+  margin-bottom: 10rem;
+}
+
+.projects-section h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.projects-section p {
+  font-size: 1rem;
+}
+
+.projects-section a {
+  font-weight: 600;
+}
+
+a {
+  color: #212529;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #e79b93;
+}
+
+/* Text spin effect */
+@media (min-width: 992px) { 
+  .spin span {
+    display: inline-block;
+    animation-name: spin;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+  }
+
+  .spin span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .spin span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .spin span:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+
+  .spin span:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+
+  .spin span:nth-child(6) {
+    animation-delay: 1s;
+  }
+
+  .spin span:nth-child(7) {
+    animation-delay: 2.5s;
+  }
+
+  .spin span:nth-child(8) {
+    animation-delay: 2.6s;
+  }
+
+  .spin span:nth-child(9) {
+    animation-delay: 2.7s;
+  }
+
+  .spin span:nth-child(10) {
+    animation-delay: 2.8s;
+  }
+
+  .spin span:nth-child(11) {
+    animation-delay: 2.9s;
+  }
+
+  .spin span:nth-child(12) {
+    animation-delay: 3.0s;
+  }
+
+  .spin span:nth-child(13) {
+    animation-delay: 3.1s;
+  }
+
+  .spin span:nth-child(14) {
+    animation-delay: 3.2s;
+  }
+
+  @-webkit-keyframes spin {
+    to {
+      transform: rotateY(360deg);
+      text-shadow: #f2cac6 0.15rem 0.15rem, #fff 0.3rem 0.3rem;
+    }
+  }
+}
