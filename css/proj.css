@@ -1,0 +1,118 @@
+.bg-purple { /* enbart MT */
+  background: url(../img/lilac-flow.png) no-repeat left top;
+  background-size: contain;
+  /*background-color: #aca3bc;*/
+}
+
+.bg-green { /* enbart CERO */
+  background: url(../img/cero-flow.png) no-repeat left top;
+  background-size: contain;
+}
+
+@media (min-width: 992px) {
+  .bg-purple {
+    background-position: left bottom !important;
+    background-size: cover;
+  }
+  .bg-green {
+    background-position: left bottom !important;
+    background-size: cover;
+  }
+}
+
+.projecthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.projecthead h1, .sec-heading {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+}
+
+.projecthead .txt-upper {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .projecthead {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+.big-headline {
+  font-size: 3.8rem;
+}
+
+.txt-lilac { /* enbart MT */
+  color: #a795b8;
+}
+
+.txt-green { /* enbart CERO */
+  color: #38a169;
+}
+
+.sec-img {
+  padding: 1rem 0;
+}
+
+.extra-padding {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.sec-img .img-container {
+  max-width: 250px;
+}
+
+.sec-img .txt-lilac {
+  color: #977EAE;
+  font-size: 1.5rem;
+}
+
+.txt-quote {
+  font-size: 1.25rem;
+}
+
+.img-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+
+.img-heading {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #707070;
+}
+
+.img-caption {
+  font-size: 1.1rem;
+  color: #707070;
+}
+
+.embed-responsive { /* Google Slides */
+  width: 84.5% !important;
+  padding-bottom: 50%;
+  margin-left: 7.75%;
+}
+
+ol > li {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+li > * {
+  font-weight: normal;
+}
+
+

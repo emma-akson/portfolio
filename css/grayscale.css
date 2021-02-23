@@ -13,8 +13,8 @@
   text-transform: uppercase;
   font-weight: 600;
   padding: 0.75rem;
-  color: #e79b93;
-  border: 0px solid #e79b93;
+  color: #fe5e54;
+  border: 0px solid #fe5e54;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -54,7 +54,7 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(201, 195, 189, 0.75);
+    color: rgba(29, 29, 29, 0.3);
   }
   #mainNav .projNav .navbar-brand {
     color: rgba(255, 255, 255, 0.5);
@@ -65,7 +65,8 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: rgba(201, 195, 189, 0.6);
+    color: rgba(29, 29, 29, 0.3);
+    /*color: rgba(201, 195, 189, 0.6);*/
   }
   #mainNav .projNav .nav-link {
     color: rgba(255, 255, 255, 0.5);
@@ -93,16 +94,16 @@
     padding: 1.5rem 1.5rem 1.25rem;
   }
   #mainNav.navbar-shrink .disabled {
-    color: #e79b93;
+    color: #fe5e54;
   }
   #mainNav.navbar-shrink .nav-link:hover, #projectNav .nav-link:hover {
-    color: #e79b93;
+    color: #fe5e54;
   }
   #mainNav.navbar-shrink .nav-link:active, #projectNav .nav-link:active {
-    color: #e79b93;
+    color: #fe5e54;
   }
   #mainNav.navbar-shrink .nav-link1.active {
-    color: #e79b93;
+    color: #fe5e54;
     outline: none;
   }
 }
@@ -139,10 +140,10 @@
 } */
 
 @media (min-width: 768px) {
-  .masthead h1 {
+  /*.masthead h1 {
     font-size: 4rem;
-    line-height: 4rem;
-  }
+    line-height: 4rem; 
+  } */
 }
 
 @media (min-width: 992px) {
@@ -271,10 +272,11 @@
   color: black;
 }
 
+/*
 .img-container {
   max-height: 370px;
   overflow: hidden;
-}
+} */
 
 .img-text-container {
   position: relative;
@@ -394,18 +396,27 @@
 
 body {
   /*font-family: 'Nunito';*/
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-family: 'Karla', Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
   /*letter-spacing: 0.0625em; */
 }
 
 a {
-  color: #64a19d;
+  color: #212529;
 }
 
-a:focus, a:hover {
+a:focus {
+  color: lightgrey;
+}
+
+a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #212529;
+}
+
+a:visited {
+  color: #212529;
 }
 
 .bg-black {
@@ -429,6 +440,7 @@ footer {
 
 /* Section project page */
 .projhead h1 {
+  font-family: 'Lora', serif;
   font-weight: 800;
   color: white;
 }
@@ -442,8 +454,13 @@ footer {
 }
 
 .proj-title-md {
+  font-family: 'Lora', serif;
   font-size: 3rem;
   line-height: 1.2;
+}
+
+.proj-title-sm {
+  font-size: 2.7rem;
 }
 
 .proj-tags {
@@ -452,27 +469,29 @@ footer {
 }
 
 .proj-intro {
+  font-family: 'Lora', serif;
   font-weight: 600;
   font-size: 1.3rem;
 }
 
 .sec-heading {
+  font-family: 'Lora', serif;
   font-weight: 900;
 }
 
 .img-caption {
-  font-style: italic;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  color: #707070;
+}
+
+.img-sm {
+  max-width: 700px;
 }
 
 .sec-page {
   width: 100%;
   height: auto;
-  padding: 8rem 0;
-}
-
-.sec-page p {
-  text-align: justify;
+  padding: 6rem 0;
 }
 
 .sec-page h2 {
@@ -514,8 +533,20 @@ footer {
   background-image: linear-gradient(to bottom, transparent 70%, #0f131a);
 }
 
+@media (min-width: 992px) {
+  .absolute-content {
+    position: relative;
+  }
+
+  .layer {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+}
 
 /* Bracket reference list */
+/*
 ol {
   counter-reset: list;
 }
@@ -530,7 +561,7 @@ ol > li:before {
   counter-increment: list;
   position: absolute;
   left: -2.4rem;
-}
+} */
 
 .ref-title {
   font-weight: 600;
@@ -549,6 +580,12 @@ h3 {
   max-width: 300px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.laptop-container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;  
 }
 
 /* Special text effects */
@@ -579,4 +616,31 @@ h3 {
   font-weight: bold;
   text-align: center;
   line-height: .5;
+}
+
+/* NEW */
+.highlight-blue {
+  background-image: linear-gradient(120deg, #2ec7eb 0%, #2ec7eb 100%);
+}
+
+.highlight-lilac {
+  background-image: linear-gradient(120deg, #d7c5e8 0%, #d7c5e8 100%);
+}
+
+.highlight-green {
+  background-image: linear-gradient(120deg, #4dce89 0%, #4dce89 100%);
+}
+
+.underline-highlight:link {
+  text-decoration: none;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  transition: background-size 500ms ease;
+}
+
+.underline-highlight:focus, .underline-highlight:hover {
+  color: black;
+  background-size: 100% 100%;
 }

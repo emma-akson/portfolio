@@ -1,11 +1,14 @@
 /* Styling specific for about.html */
-
-.about h1 {
-  font-size: 4rem;
+.masthead h1, h2 {
+  font-family: 'Lora', serif;
   font-weight: bold;
-  color: #e79b93;
-  text-shadow: #f2cac6 0.15rem 0.15rem, #fff 0.3rem 0.3rem;
 }
+
+.masthead h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
 
 .about p {
   font-size: 1.1rem;
@@ -15,6 +18,24 @@
 .about-section h5 {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.highlight-blue {
+  background-image: linear-gradient(120deg, #2ec7eb 0%, #2ec7eb 100%);
+}
+
+.underline-highlight:link {
+  text-decoration: none;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  transition: background-size 500ms ease;
+}
+
+.underline-highlight:focus, .underline-highlight:hover {
+  color: black;
+  background-size: 100% 100%;
 }
 
 .edu-link {
@@ -68,8 +89,41 @@
   padding: 10rem 0;
 }
 
-.about-section h6 {
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #e79b93;
+.about-section h4 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+}
+
+.profile-sec {
+  position: relative;
+}
+
+.profile-sec .img-fluid {
+  height: 65%;
+  border-radius: 50%;
+  max-width: 500px;
+  margin-bottom: 10%;
+}
+
+.img-decor {
+  position: absolute;
+  color: #fcd200;
+  font-weight: bolder;
+  font-size: 8rem;
+  z-index: 1;
+}
+
+.decor1 {
+  top: 0rem;
+  left: 5.5rem;
+}
+
+.decor2 {
+  top: 17rem;
+  right: 1rem;
+}
+
+.decor3 {
+  top: 18rem;
+  right: 3rem;
 }
